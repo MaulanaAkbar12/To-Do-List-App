@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+// Function to add task
     private void setupFabAddTask() {
         fabAddTask.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, AddTaskActivity.class);
