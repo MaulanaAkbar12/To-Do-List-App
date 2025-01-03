@@ -1,5 +1,5 @@
 package com.example.to_dolistapp;
-
+// import library
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+// Function to add task
     private void setupFabAddTask() {
         fabAddTask.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, AddTaskActivity.class);
