@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
-
+//set up recyclerview function
     private void setupRecyclerViewListeners() {
         adapter.setOnItemClickListener(new TaskAdapter.OnItemClickListener() {
             @Override
