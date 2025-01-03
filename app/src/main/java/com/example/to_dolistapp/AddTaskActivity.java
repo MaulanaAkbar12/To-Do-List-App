@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -224,7 +225,8 @@ public class AddTaskActivity extends AppCompatActivity {
         String selection = TaskContract.PriorityEntry.COLUMN_NAME + " = ?";
         String[] selectionArgs = {priorityName};
 
-        android.database.Curs   or cursor = db.query(
+        android.database.Cursor   or;
+        Cursor cursor = db.query(
                 TaskContract.PriorityEntry.TABLE_NAME,
                 projection,
                 selection,
